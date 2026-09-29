@@ -15,6 +15,41 @@ Un usuario envio muchos correos de manera que a quien les llegaran, se pensaría
 ### Medida de prevención
 SPF, DKIM y DMARC
 
+## 2. DNS spoofing
+
+### Qué es
+Ciberataque que se alteran los registros de un servidor para mandar ususarios a paginas web maliciosas.
+
+### Cómo se lleva a cabo
+Eliminando el cache o los registros que tenga el DNS en cuestión, y cambiándolos por lo que quieran los atacantes.
+
+### Qué categoría(s) de amenaza compromete
+Amenaza a la disponibilidad
+
+### Ejemplo o caso real
+Unos crackers lanzaron un ataque DNS spoofing a un aeropuerto y simplemente eliminaron todos sus dominios para cambiarlo por la foto de un lagarto en el error 404.
+
+### Medida de prevención
+Los proveedores pueden configurar su DNS con LLS para llevar un control de a donde van los usuarios.
+
+## 3. IP spoofing
+
+### Qué es
+Tecnica utilizada para robar paquetes que se centra en falsificar las IP.
+
+### Cómo se lleva a cabo
+Todos los paquetes de red tienen una cabecera con un destino y un origen, el atacante puede cambiar las 2 para diriigir hacia donde va el paquete.
+
+### Qué categoría(s) de amenaza compromete
+Compromete la autentifidad, integridad y podria llegar a vulnerabilidar la disponibilidad.
+
+### Ejemplo o caso real
+En 1994, un usuario quería acceder a un ordenador en concreto, consiguió saber una IP de confianza y el ordenador 
+le dio accesso por que no habian mas capas de seguridad en ese entonces.
+
+### Medida de prevención
+Filtrar los paquetes y supervision de firewalls.
+
 ## 4. Captura de cuentas de usuario y contraseñas
 
 ### Qué es
@@ -34,5 +69,3 @@ Todo esto se originó mediante un malware instalado en los ordenadores de los us
 
 ### Medida de prevención
 Utilizar contraseñas seguras y diferentes para cada cuenta, activar la autenticación de dos factores (2FA), evitar acceder a enlaces sospechosos y mantener actualizados el sistema operativo y los programas de seguridad.
-
-## Fuente
